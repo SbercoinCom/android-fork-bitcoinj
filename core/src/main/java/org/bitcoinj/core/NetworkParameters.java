@@ -59,11 +59,11 @@ public abstract class NetworkParameters {
     public static final String ID_REGTEST = "org.bitcoin.regtest";
     /** Unit test network. */
     public static final String ID_UNITTESTNET = "org.bitcoinj.unittest";
-	 /** The string returned by getId() for the Qtum mainnet. */
-    public static final String ID_QTUM_MAINNET = "org.bitcoinj.qtum_mainnet";
+	 /** The string returned by getId() for the Sbercoin mainnet. */
+    public static final String ID_SBER_MAINNET = "org.bitcoinj.sbercoin_mainnet";
 
-    /** The string returned by getId() for the Qtum mainnet. */
-    public static final String ID_QTUM_TESTNET = "org.bitcoinj.qtum_testnet";
+    /** The string returned by getId() for the Sbercoin mainnet. */
+    public static final String ID_SBER_TESTNET = "org.bitcoinj.sbercoin_testnet";
 	
 	/** The string returned by getId() for the WhiteCoin netparams. */
     public static final String ID_WHITECOIN_NET = "org.bitcoinj.whitecoin_net";
@@ -232,10 +232,10 @@ public abstract class NetworkParameters {
             return UnitTestParams.get();
         } else if (id.equals(ID_REGTEST)) {
             return RegTestParams.get();
-        } else if (id.equals(ID_QTUM_MAINNET)) {
-            return QtumMainNetParams.get();
-        } else if (id.equals(ID_QTUM_TESTNET)) {
-            return QtumTestNetParams.get();
+        } else if (id.equals(ID_SBER_MAINNET)) {
+            return SbercoinMainNetParams.get();
+        } else if (id.equals(ID_SBER_TESTNET)) {
+            return SbercoinTestNetParams.get();
         } else if(id.equals(ID_WHITECOIN_NET)){
 			return WhiteCoinNetParams.get();
 		}else{

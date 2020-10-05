@@ -38,6 +38,9 @@ public class SbercoinMainNetParams extends AbstractBitcoinNetParams {
         subsidyDecreaseBlockCount = 2102400;
         spendableCoinbaseDepth = 100;
         String genesisHash = genesisBlock.getHashAsString();
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        System.out.println(genesisHash);
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         checkState(genesisHash.equals("0000a8b0ba85ea46d2a03e846d8170c9a88a32a562a3d2a739f485743784bb6b"),
                 genesisHash);
 
